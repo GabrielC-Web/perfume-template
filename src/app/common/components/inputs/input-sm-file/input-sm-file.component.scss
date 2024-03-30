@@ -1,0 +1,54 @@
+@import '../../../assets/styles/scss/variables.scss';
+
+.cmm-txt-green{
+  color:$v-primary !important;
+  border: 1px solid $v-primary;
+
+}
+
+.cmm-txt-green:hover{
+  color: $v-white;
+}
+
+.cmm-txt-red{
+  color: $v-error !important;
+  border: 1px solid $v-error;
+}
+
+.cmm-txt-red:hover{
+  color: $v-white;
+}
+
+.cmm-txt-green:hover{
+color: $v-white;
+}
+
+.previewBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  }
+
+.imgFile{
+  border-radius: 5px;
+  width: 200px !important;
+  max-width: 200px !important;
+  max-height: 150px !important;
+}
+
+.attach_button{
+  border-radius: 50%;
+  width: 48px !important;
+  height: 48px !important;
+}
+
+.delete-icon{
+  transition: all 250ms ease;
+}
+
+.delete-icon:hover{
+  transform: scale(1.2);
+  color: $v-error !important;
+}
