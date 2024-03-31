@@ -1,0 +1,126 @@
+<!-- For her/him -->
+<section class="row g-0">
+
+    <div [style.background-image]="'url(' + homeImages.her +')'"
+        class="col-6 home-bg-image d-flex flex-column align-items-center justify-content-center overflow-hidden">
+
+        <div class="d-flex flex-column justify-content-center align-items-center" style="translate: 0 50%;">
+
+            <p class="m-0 text-white" style="font-size: 80px !important;">for her</p>
+
+            <!-- Botón -->
+            <cmp-core-button mode="light">
+                Descubrir
+            </cmp-core-button>
+
+        </div>
+
+    </div>
+
+    <div [style.background-image]="'url(' + homeImages.him +')'"
+        class="col-6 home-bg-image d-flex flex-column align-items-center justify-content-center overflow-hidden">
+
+        <p class="m-0 text-white" style="font-size: 80px !important;">for him</p>
+
+        <!-- Botón -->
+        <cmp-core-button mode="light">
+            Descubrir
+        </cmp-core-button>
+
+    </div>
+
+</section>
+
+<!-- Todas tus fragancias favoritas -->
+<section class="row g-0 cmm-bg-white justify-content-center py-5">
+
+    <h3 class="text-center my-3">TODAS TUS FRAGANCIAS FAVORITAS, <strong class="cmm-txt-bold">EN UN SOLO LUGAR</strong>
+    </h3>
+
+    <div id="carousel" class="container carousel carousel-dark slide d-flex align-items-center" data-bs-touch="false"
+        data-bs-pause="true" data-bs-ride="carousel">
+
+        <!-- Indicadores de cantidade de porductos en el carrucel -->
+        <div class="carousel-indicators">
+
+            <button *ngFor="let button of productItems, index as i" type="button" data-bs-target="#carousel"
+                (click)="selectTemplate(i)" attr.data-bs-slide-to="{{i}}" [ngClass]="{'active': i == 0}"
+                aria-label="Slide 1"></button>
+
+        </div>
+
+        <!-- contendor de imagenes -->
+        <div class="carousel-inner h-100 pb-5">
+
+            <!-- Plantilla -->
+            <div *ngFor="let product of productItems, index as i" class="carousel-item h-100"
+                [ngClass]="{'active': i == 0}" data-bs-interval="5000">
+
+                <div class="col-12 col-md-10 col-lg-8 h-100 p-0 mx-auto d-flex align-items-center">
+
+                    <img [src]="product.image" class="d-block mx-auto rounded" style="max-height: 85%; max-width: 80%;"
+                        alt="imagen de la plantilla">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- botones -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev"
+            (click)="prevElement()">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next"
+            (click)="nextElement()">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+
+    <cmp-core-button class="d-flex justify-content-center">
+        Descubrir
+    </cmp-core-button>
+
+</section>
+
+<!-- square add images -->
+<section class="row g-0">
+
+    <div *ngFor="let add of adds" class="col-6">
+        <img [src]="add" alt="" class="w-100" style="aspect-ratio: 1;">
+    </div>
+
+</section>
+
+<!-- logos -->
+<section class="row g-0 cmm-bg-white justify-content-evenly flex-row py-5">
+
+    <img class="col-4" *ngFor="let logo of logos" [src]="logo" alt="" style="max-height: 200px;">
+
+</section>
+
+<!-- Artículo -->
+<section class="row g-0  cmm-bg-white pb-5">
+
+    <div class="col-6">
+        <img [src]="articleAdd" alt="" class="w-100 h-100" style="aspect-ratio: 1;">
+    </div>
+
+    <div class="col-6 px-5">
+
+        <h4 class="cmm-txt-bold fs-24">SOBREPASA LOS LÍMITES DE LA EXPRESIVIDAD Y CREA TU PROPIO ESTILO.</h4>
+
+        <P class="fs-16 my-5">Redescubre nuestras atrevidas y seductoras fragancias de la mano de los íconos y de las
+            novedades de
+            Rabanne.</P>
+
+        <cmp-core-button class="d-flex justify-content-center">Descubrir</cmp-core-button>
+
+    </div>
+
+</section>

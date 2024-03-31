@@ -1,0 +1,9 @@
+<button class="p-3 rounded" [style.backgroundColor]="mode == 'dark'? darkBg: lightBg"
+    style="width: 350px;border: none;max-width: 100% !important;">
+
+    <div class="" [ngClass]="mode == 'dark'?'text-white':'text-black'">
+        <ng-content>
+        </ng-content>
+    </div>
+
+</button>
