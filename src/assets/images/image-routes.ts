@@ -12,6 +12,10 @@ export const icons = {
     perfume: 'assets/images/iconos/perfume.svg',
     van: 'assets/images/iconos/van.svg',
     kart: 'assets/images/iconos/kart.svg',
+    twitter: 'assets/images/iconos/icons8-twitter.svg',
+    facebook: 'assets/images/iconos/icons8-facebook.svg',
+    instagram: 'assets/images/iconos/icons8-instagram.svg',
+    whatsapp: 'assets/images/iconos/nd_whatsapp_icon.svg'
 }
 
 export const logos = {
