@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*--------------------------------------------------------------------------------------------------------------------------------------
+ Importaciones de Archivo de Estilos
+--------------------------------------------------------------------------------------------------------------------------------------*/
+
+@import "node_modules/bootstrap/dist/css/bootstrap.css";
+@import "./app/common/assets/styles/scss/backgrounds.scss";
+@import "./app/common/assets/styles/scss/materialize.scss";
+@import "./app/common/assets/styles/scss/text.scss";
+@import "./app/common/assets/styles/scss/variables.scss";
+@import "./app/common/assets/styles/scss/effects.scss";
+@import "./app/common/assets/styles/scss/themes-material.scss";
+
+*:not(.material-icons) {
+    font-family: "montserrat" !important;
+}
+
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("./assets/fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("./assets/fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("./assets/fonts/montserrat/Montserrat-Black.ttf") format("truetype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("./assets/fonts/montserrat/Montserrat-Light.ttf") format("truetype");
+    font-weight: lighter;
+}

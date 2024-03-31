@@ -22,6 +22,7 @@ import { AppComponent } from './app.component';
         BrowserModule,
         FormsModule,
         CommonModule,
+        CmmModule,
         ReactiveFormsModule,
         RouterModule,
         AppRoutingModule,
