@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { facebookIcon, twitterIcon } from 'src/app/common/assets/images/images-routes';
 import { adds, carouselImages, homeImages, logos } from 'src/assets/images/image-routes';
 
 @Component({
-  selector: 'pag-main-layout',
-  templateUrl: './main-layout.component.html',
-  styleUrls: ['./main-layout.component.scss']
+  selector: 'pag-home-layout',
+  templateUrl: './home-layout.component.html',
+  styleUrls: ['./home-layout.component.scss']
 })
-export class MainLayoutComponent {
+export class HomeLayoutComponent {
 
   /**
    * Imágenes de home
