@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { adds, homeImages } from 'src/assets/images/image-routes';
+import { mainData } from 'src/app/modules/main/models/main.data';
+import { productAds, homeImages } from 'src/assets/images/image-routes';
 
 @Component({
   selector: 'pag-products-layout',
@@ -8,8 +9,9 @@ import { adds, homeImages } from 'src/assets/images/image-routes';
 })
 export class ProductsLayoutComponent {
 
-  adds = adds
-
-  otherImages = homeImages
+  /**
+   * Data cableada
+   */
+  templateData = mainData
 
 }

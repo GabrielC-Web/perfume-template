@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { adds, carouselImages, homeImages, logos } from 'src/assets/images/image-routes';
+import { mainData } from 'src/app/modules/main/models/main.data';
+import { productAds, carouselImages, homeImages, logos } from 'src/assets/images/image-routes';
 
 @Component({
   selector: 'pag-home-layout',
@@ -7,6 +8,12 @@ import { adds, carouselImages, homeImages, logos } from 'src/assets/images/image
   styleUrls: ['./home-layout.component.scss']
 })
 export class HomeLayoutComponent {
+
+
+  /**
+   * Data cableada
+   */
+  templateData = mainData
 
   /**
    * Imágenes de home
@@ -38,28 +45,6 @@ export class HomeLayoutComponent {
    * Producto seleccionado
    */
   productSelected: any
-
-  /**
-   * Logos
-  */
-  logos = [
-    logos.dior,
-    logos.paco_rabanne,
-    logos.antonio_banderas
-  ]
-
-  /**
-   * Publicidades
-   */
-  adds = [
-    adds.ad1,
-    adds.ad2,
-    adds.ad3,
-    adds.ad4,
-  ]
-
-  articleAdd = adds.ad5
-
 
   /**
    * Funcion para seleccionar el siguiente elemento del carrucel
