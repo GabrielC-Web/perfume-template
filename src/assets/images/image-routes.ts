@@ -1,7 +1,8 @@
 
 export const homeImages = {
     her: 'assets/images/adds/her.jpg',
-    him: 'assets/images/adds/him.jpg'
+    him: 'assets/images/adds/him.jpg',
+    footer_lady: 'assets/images/adds/footer_lady.jpg'
 }
 
 /**
@@ -43,5 +44,23 @@ export const adds = {
     ad2: 'assets/images/adds/ad2.jpg',
     ad3: 'assets/images/adds/ad3.jpg',
     ad4: 'assets/images/adds/ad4.jpg',
-    ad5: 'assets/images/adds/ad5.jpg'
+    ad5: 'assets/images/adds/ad5.jpg',
+    ad6: 'assets/images/adds/ad6.jpg',
+    ad7: 'assets/images/adds/ad7.jpg',
+    ad8: 'assets/images/adds/ad8.jpg',
+    ad9: 'assets/images/adds/ad9.jpg',
+    ad10: 'assets/images/adds/ad10.jpg',
+}
+
+export const productImages = {
+    product1: 'assets/images/adds/perfume1.jpg',
+    product2: 'assets/images/adds/perfume2.jpg',
+    product3: 'assets/images/adds/perfume3.jpg',
+    product4: 'assets/images/adds/perfume4.jpg',
+    product5: 'assets/images/adds/perfume5.jpg',
+    product6: 'assets/images/adds/perfume6.jpg',
+    product7: 'assets/images/adds/perfume7.jpg',
+    product8: 'assets/images/adds/perfume8.jpg',
+    product9: 'assets/images/adds/perfume9.jpg',
+    product10: 'assets/images/adds/perfume10.jpg'
 }
