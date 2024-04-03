@@ -93,6 +93,9 @@ export const mainData = {
             }
         }
     },
+    /**
+     * Módulo de productos
+     */
     productsModule: {
         mainAd: productAds.productAd1,
         lowerAd: homeImages.footer_lady,
@@ -160,6 +163,45 @@ export const mainData = {
                     brandName: 'PACO RABANNE'
                 },
             ]
+        },
+        productsOverview: {
+            productsInkart: [
+                {
+                    image: productImages.product1,
+                    name: 'lady million',
+                    brandName: 'paco rabanne',
+                    sku: 'krogm93746917',
+                    quantity: 1,
+                    price: 175,
+                    currency: 'us$'
+                },
+                {
+                    image: productImages.product1,
+                    name: 'lady million',
+                    brandName: 'paco rabanne',
+                    sku: 'krogm93746917',
+                    quantity: 1,
+                    price: 175,
+                    currency: 'us$'
+                },
+                {
+                    image: productImages.product1,
+                    name: 'lady million',
+                    brandName: 'paco rabanne',
+                    sku: 'krogm93746917',
+                    quantity: 1,
+                    price: 175,
+                    currency: 'us$'
+                },
+            ],
+            preBill: {
+                basePrice: 175,
+                delivery: 175,
+                totalPrice: 175,
+                discount: '_ US$',
+                currency: 'US$'
+            }
+
         }
-    }
+    },
 }
