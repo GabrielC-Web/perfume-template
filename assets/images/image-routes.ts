@@ -20,7 +20,7 @@ export const icons = {
 }
 
 export const logos = {
-    antonio_banderas: 'assets/images/logos/antonio_banderas.svg',
+    antonioBanderas: 'assets/images/logos/antonio_banderas.svg',
     dior: 'assets/images/logos/dior.svg',
     paco_rabanne: 'assets/images/logos/paco_rabanne.svg',
 }
@@ -39,17 +39,17 @@ export const carouselImages = {
 /**
  * Publicidades
  */
-export const adds = {
-    ad1: 'assets/images/adds/ad1.jpg',
-    ad2: 'assets/images/adds/ad2.jpg',
-    ad3: 'assets/images/adds/ad3.jpg',
-    ad4: 'assets/images/adds/ad4.jpg',
-    ad5: 'assets/images/adds/ad5.jpg',
-    ad6: 'assets/images/adds/ad6.jpg',
-    ad7: 'assets/images/adds/ad7.jpg',
-    ad8: 'assets/images/adds/ad8.jpg',
-    ad9: 'assets/images/adds/ad9.jpg',
-    ad10: 'assets/images/adds/ad10.jpg',
+export const productAds = {
+    productAd1: 'assets/images/adds/ad1.jpg',
+    productAd2: 'assets/images/adds/ad2.jpg',
+    productAd3: 'assets/images/adds/ad3.jpg',
+    productAd4: 'assets/images/adds/ad4.jpg',
+    productAd5: 'assets/images/adds/ad5.jpg',
+    productAd6: 'assets/images/adds/ad6.jpg',
+    productAd7: 'assets/images/adds/ad7.jpg',
+    productAd8: 'assets/images/adds/ad8.jpg',
+    productAd9: 'assets/images/adds/ad9.jpg',
+    productAd10: 'assets/images/adds/ad10.jpg',
 }
 
 export const productImages = {
