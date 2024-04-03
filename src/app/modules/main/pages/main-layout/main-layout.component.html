@@ -1,16 +1,19 @@
-<main class="container-fluid container-sm g-0" style="max-width: 1000px;">
+<div class="d-flex flex-column vh-100 justify-content-between">
 
-    <!-- Espacio para el navbar -->
-    <cmp-main-header></cmp-main-header>
+    <main class="container-fluid container-sm g-0" style="max-width: 1000px;">
 
-    <!-- Contenido principal -->
-    <div>
+        <!-- Espacio para el navbar -->
+        <cmp-main-header></cmp-main-header>
 
-        <router-outlet></router-outlet>
+        <!-- Contenido principal -->
+        <div>
 
-    </div>
+            <router-outlet></router-outlet>
 
-</main>
+        </div>
 
-<!-- Footer -->
-<cmp-main-footer></cmp-main-footer>
+    </main>
+
+    <!-- Footer -->
+    <cmp-main-footer></cmp-main-footer>
+</div>

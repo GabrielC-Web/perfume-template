@@ -7,13 +7,17 @@ import { CoreModule } from 'src/app/core/core.module';
 import { ProductsGridComponent } from './components/products-grid/products-grid.component';
 import { ProductsPaginatorComponent } from './components/products-paginator/products-paginator.component';
 import { CmmModule } from 'src/app/common/common.module';
+import { ProductsOverviewComponent } from './pages/products-overview/products-overview.component';
+import { ProductsKartComponent } from './components/products-kart/products-kart.component';
 
 
 @NgModule({
   declarations: [
     ProductsLayoutComponent,
     ProductsGridComponent,
-    ProductsPaginatorComponent
+    ProductsPaginatorComponent,
+    ProductsOverviewComponent,
+    ProductsKartComponent
   ],
   imports: [
     CommonModule,

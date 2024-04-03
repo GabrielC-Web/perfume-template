@@ -1,30 +1,31 @@
 <!-- For her/him -->
 <section class="row g-0">
 
-    <div [style.background-image]="'url(' + homeImages.her +')'"
+    <div [style.background-image]="'url(' + templateData.homeModule.mainLeftAd.image +')'"
         class="col-6 home-bg-image d-flex flex-column align-items-center justify-content-center overflow-hidden">
 
         <div class="d-flex flex-column justify-content-center align-items-center" style="translate: 0 50%;">
 
-            <p class="m-0 text-white" style="font-size: 80px !important;">for her</p>
+            <p class="m-0 text-white" style="font-size: 80px !important;">{{templateData.homeModule.mainLeftAd.text}}
+            </p>
 
             <!-- Botón -->
             <cmp-core-button mode="light">
-                Descubrir
+                {{templateData.homeModule.mainLeftAd.button}}
             </cmp-core-button>
 
         </div>
 
     </div>
 
-    <div [style.background-image]="'url(' + homeImages.him +')'"
+    <div [style.background-image]="'url(' + templateData.homeModule.mainRightAd.image +')'"
         class="col-6 home-bg-image d-flex flex-column align-items-center justify-content-center overflow-hidden">
 
-        <p class="m-0 text-white" style="font-size: 80px !important;">for him</p>
+        <p class="m-0 text-white" style="font-size: 80px !important;">{{templateData.homeModule.mainRightAd.text}}</p>
 
         <!-- Botón -->
         <cmp-core-button mode="light">
-            Descubrir
+            {{templateData.homeModule.mainRightAd.button}}
         </cmp-core-button>
 
     </div>
@@ -34,7 +35,8 @@
 <!-- Todas tus fragancias favoritas -->
 <section class="row g-0 cmm-bg-white justify-content-center py-5">
 
-    <h3 class="text-center my-3">TODAS TUS FRAGANCIAS FAVORITAS, <strong class="cmm-txt-bold">EN UN SOLO LUGAR</strong>
+    <h3 class="text-center my-3 cmm-txt-uppercase">{{templateData.homeModule.carouselSection.text + ', '}} <strong
+            class="cmm-txt-thin-bold">{{templateData.homeModule.carouselSection.strongText}}</strong>
     </h3>
 
     <div id="carousel" class="container carousel carousel-dark slide d-flex align-items-center" data-bs-touch="false"
@@ -43,9 +45,9 @@
         <!-- Indicadores de cantidade de porductos en el carrucel -->
         <div class="carousel-indicators">
 
-            <button *ngFor="let button of productItems, index as i" type="button" data-bs-target="#carousel"
-                (click)="selectTemplate(i)" attr.data-bs-slide-to="{{i}}" [ngClass]="{'active': i == 0}"
-                aria-label="Slide 1"></button>
+            <button *ngFor="let button of templateData.homeModule.carouselSection.carouselItems, index as i"
+                type="button" data-bs-target="#carousel" (click)="selectTemplate(i)" attr.data-bs-slide-to="{{i}}"
+                [ngClass]="{'active': i == 0}" aria-label="Slide 1"></button>
 
         </div>
 
@@ -53,8 +55,8 @@
         <div class="carousel-inner h-100 pb-5">
 
             <!-- Plantilla -->
-            <div *ngFor="let product of productItems, index as i" class="carousel-item h-100"
-                [ngClass]="{'active': i == 0}" data-bs-interval="5000">
+            <div *ngFor="let product of templateData.homeModule.carouselSection.carouselItems, index as i"
+                class="carousel-item h-100" [ngClass]="{'active': i == 0}" data-bs-interval="5000">
 
                 <div class="col-12 col-md-10 col-lg-8 h-100 p-0 mx-auto d-flex align-items-center">
 
@@ -83,7 +85,7 @@
     </div>
 
     <cmp-core-button class="d-flex justify-content-center">
-        Descubrir
+        {{templateData.homeModule.carouselSection.button}}
     </cmp-core-button>
 
 </section>
@@ -91,31 +93,31 @@
 <!-- square add images -->
 <section class="row g-0">
 
-    <div *ngFor="let add of adds" class="col-6">
-        <img [src]="add" alt="" class="w-100" style="aspect-ratio: 1;">
+    <div *ngFor="let productAd of templateData.homeModule.squareAdsSection.images" class="col-6">
+        <img [src]="productAd" alt="" class="w-100" style="aspect-ratio: 1;">
     </div>
 
 </section>
 
 <!-- logos -->
-<cmp-core-brands></cmp-core-brands>
+<cmp-core-brands [brandImages]="templateData.brandsBanner"></cmp-core-brands>
 
 <!-- Artículo -->
 <section class="row g-0  cmm-bg-white pb-5">
 
     <div class="col-6">
-        <img [src]="articleAdd" alt="" class="w-100 h-100" style="aspect-ratio: 1;">
+        <img [src]="templateData.homeModule.lowerSection.productAd" alt="" class="w-100 h-100" style="aspect-ratio: 1;">
     </div>
 
     <div class="col-6 px-5">
 
-        <h4 class="cmm-txt-bold fs-24">SOBREPASA LOS LÍMITES DE LA EXPRESIVIDAD Y CREA TU PROPIO ESTILO.</h4>
+        <h4 class="cmm-txt-thin-bold fs-24 cmm-txt-uppercase">{{templateData.homeModule.lowerSection.article.title}}
+        </h4>
 
-        <P class="fs-16 my-5">Redescubre nuestras atrevidas y seductoras fragancias de la mano de los íconos y de las
-            novedades de
-            Rabanne.</P>
+        <P class="fs-16 my-5 cmm-txt-uppercase">{{templateData.homeModule.lowerSection.article.text}}</P>
 
-        <cmp-core-button class="d-flex justify-content-center">Descubrir</cmp-core-button>
+        <cmp-core-button
+            class="d-flex justify-content-center">{{templateData.homeModule.lowerSection.article.button}}</cmp-core-button>
 
     </div>
 

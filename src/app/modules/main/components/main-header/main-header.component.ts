@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { icons, logos } from 'src/assets/images/image-routes';
+import { mainData } from '../../models/main.data';
 
 @Component({
   selector: 'cmp-main-header',
@@ -9,13 +10,8 @@ import { icons, logos } from 'src/assets/images/image-routes';
 export class MainHeaderComponent {
 
   /**
-   * Objeto con los logos
+   * Data cableada
    */
-  logos = logos
-
-  /**
-   * Íconos
-   */
-  icons = icons
+  templateData = mainData
 
 }

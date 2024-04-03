@@ -5,12 +5,13 @@
         <!-- Ad principal -->
         <div class="col-12 p-0">
 
-            <img [src]="adds.ad5" class="w-100 h-100" style="aspect-ratio: 16/9;">
+            <img [src]="templateData.productsModule.mainAd" class="w-100 h-100" style="aspect-ratio: 16/9;">
 
         </div>
 
         <!-- Productos -->
-        <cmp-products-grid class="my-3 px-3"></cmp-products-grid>
+        <cmp-products-grid class="my-3 px-3"
+            [products]="templateData.productsModule.products.items"></cmp-products-grid>
 
         <!-- Marcas -->
         <cmp-core-brands></cmp-core-brands>
@@ -19,7 +20,7 @@
         <!-- Ad principal -->
         <div class="col-12 p-0">
 
-            <img [src]="otherImages.footer_lady" class="w-100 h-100" style="aspect-ratio: 16/6;">
+            <img [src]="templateData.productsModule.lowerAd" class="w-100 h-100" style="aspect-ratio: 16/6;">
 
         </div>
 

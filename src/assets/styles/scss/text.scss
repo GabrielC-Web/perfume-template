@@ -105,6 +105,10 @@ body {
   font-weight: 600 !important;
 }
 
+.cmm-txt-thin-bold {
+  font-weight: 700 !important;
+}
+
 .cmm-txt-bold {
   font-weight: 900 !important;
 }
@@ -364,6 +368,22 @@ body {
 
 .cmm-txt-white {
   color: $v-white !important;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------
+Mayúsculas, minúsculas y más
+--------------------------------------------------------------------------------------------------------------------------------------*/
+
+.cmm-txt-uppercase {
+  text-transform: uppercase !important;
+}
+
+.cmm-txt-lowercase {
+  text-transform: lowercase !important;
+}
+
+.cmm-txt-capitalize {
+  text-transform: capitalize !important;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------

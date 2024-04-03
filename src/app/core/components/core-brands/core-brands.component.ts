@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { logos } from 'src/assets/images/image-routes';
 
 @Component({
@@ -11,10 +11,10 @@ export class CoreBrandsComponent {
   /**
    * Logos
   */
-  logos = [
+  @Input() brandImages: string[] = [
     logos.dior,
     logos.paco_rabanne,
-    logos.antonio_banderas
+    logos.antonioBanderas
   ]
 
 }
