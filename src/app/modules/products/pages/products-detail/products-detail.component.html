@@ -1,0 +1,103 @@
+<!-- Carrito de productos -->
+<section class="col-12 my-5">
+
+    <div class="row w-100 justify-content-between">
+
+        <!-- Imágenes -->
+        <div class="col-6 h-100 pe-4">
+
+            <img *ngFor="let image of images" [src]="image" style="width: 50%;aspect-ratio: 9/16;max-height: 300px;"
+                alt="">
+
+        </div>
+
+        <!-- Detalles -->
+        <div class="col-6 d-flex flex-column align-items-center justify-content-center ps-5">
+
+            <div class="d-flex flex-column align-items-center">
+
+                <h4 class="cmm-txt-uppercase cmm-txt-thin-bold fs-30">{{productInfo.name}}</h4>
+
+                <span class="cmm-txt-uppercase mt-2">{{'by ' + productInfo.brandName}}</span>
+
+                <p class="cmm-txt-uppercase mt-4">{{productInfo.description}}</p>
+
+            </div>
+
+
+            <!-- Tamaños de perfumes -->
+            <div class="w-100 d-flex justify-content-between mt-5">
+
+                <div *ngFor="let item of productInfo.sizes; first as isFirst;last as isLast"
+                    class="border p-2 text-center"
+                    [ngClass]="isFirst?'rounded-start ps-3 pe-5':isLast?'rounded-end ps-5 pe-3':'flex-grow-1'">
+                    <span>{{item}}</span>
+                </div>
+
+            </div>
+
+            <!-- Botón de agregar al carrito -->
+            <cmp-core-button class="w-100 mt-5">
+                Agregar al carrito
+            </cmp-core-button>
+
+            <!-- Extra -->
+            <div class="w-100 mt-5">
+
+                <span class="d-flex align-items-center justify-content-between">
+                    <img src="assets/images/iconos/perfume.svg" alt="" width="50" height="50">
+
+                    <h4 class="cmm-txt-uppercase text-center flex-grow-1">{{productInfo.aditional.title}}</h4>
+                </span>
+
+                <p class="cmm-txt-uppercase text-justify px-3 m-0">{{productInfo.aditional.description}}</p>
+
+            </div>
+
+            <!-- Envíos -->
+            <span class="d-flex align-items-center justify-content-between mt-5">
+                <img src="assets/images/iconos/van.svg" alt="" width="50" height="50">
+
+                <h4 class="cmm-txt-uppercase text-center flex-grow-1">envíos a nivel nacional</h4>
+            </span>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- Video -->
+<section class="col-12">
+
+    <iframe width="100%" height="500px" src="https://www.youtube.com/embed/oH7axwK5YTY?si=YmMlhWHKPox2f2yI"></iframe>
+
+</section>
+
+<!-- Sección de publicidades inferiores -->
+<section class="col-12 mt-5">
+
+    <h4 class="cmm-txt-uppercase text-center flex-grow-1">También podría interesarte</h4>
+
+    <!-- Productos -->
+    <cmp-products-grid class="my-3 px-3" [products]="aditionalProducts" [showPaginator]="false"></cmp-products-grid>
+
+</section>
+
+<!-- Regalos -->
+<section class="col-12">
+
+    <div class="w-100 py-2 my-5" style="background-color: black;">
+        <h4 class="cmm-txt-uppercase text-center m-0 text-white">regalos para ocasiones especiales</h4>
+    </div>
+
+    <!-- Productos -->
+    <cmp-products-grid class="my-3 px-3" [products]="aditionalProducts" [showPaginator]="false"></cmp-products-grid>
+
+    <!-- Botón de agregar al carrito -->
+    <cmp-core-button class="mt-5 w-50 d-flex mx-auto mb-5">
+        Agregar al carrito
+    </cmp-core-button>
+
+</section>

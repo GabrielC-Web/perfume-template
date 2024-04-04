@@ -202,6 +202,28 @@ export const mainData = {
                 currency: 'US$'
             }
 
+        },
+        productDetail: {
+            images: [
+                productImages.product4,
+                productImages.product5,
+                productImages.product6,
+                productImages.product7
+            ],
+            productInfo: {
+                name: 'lady million',
+                brandName: 'paco rabanne',
+                description: 'una fragancia floral amaderada fresca semejante a un néctar de flores de estela delicada de naranja amarga, frambuesa y jazmin con un aroma realizado gracias a las notas de pachuli y miel.',
+                sizes: [
+                    '30ML',
+                    '50ML',
+                    '80ML',
+                ],
+                aditional: {
+                    title: 'prueba de perfumes',
+                    description: '** con tu equipo obtendrás un catálogo y una prueba  de tu perfume, si no te convence, podrás devolverlo gratis, y cambiarlo por un aroma que te agrade de la marca.'
+                }
+            }
         }
     },
 }

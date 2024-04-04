@@ -10,4 +10,6 @@ export class ProductsGridComponent {
 
   @Input() products: any = []
 
+  @Input() showPaginator: boolean = true
+
 }

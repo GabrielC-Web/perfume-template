@@ -1,12 +1,12 @@
-<div class="d-flex flex-column vh-100 justify-content-between">
+<div class="container-fluid g-0">
 
-    <main class="container-fluid container-sm g-0" style="max-width: 1000px;">
+    <main class="row mx-auto g-0 h-100" style="max-width: 1000px;margin-bottom: 100px;">
 
         <!-- Espacio para el navbar -->
         <cmp-main-header></cmp-main-header>
 
         <!-- Contenido principal -->
-        <div>
+        <div class="">
 
             <router-outlet></router-outlet>
 
@@ -15,5 +15,6 @@
     </main>
 
     <!-- Footer -->
-    <cmp-main-footer></cmp-main-footer>
+    <cmp-main-footer class="overflow-hidden"></cmp-main-footer>
+
 </div>
