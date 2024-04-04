@@ -3,11 +3,12 @@
     <div class="cmm-bg-white w-100 h-100 d-flex justify-content-evenly align-items-center border-bottom">
 
         <!-- Logo principal -->
-        <img class="cursor-pointer" [src]="templateData.navBar.mainLogo" width="100px" height="100px">
+        <img class="cursor-pointer" [src]="templateData.navBar.mainLogo" width="100px" height="100px"
+            [routerLink]="'home'">
 
         <!-- Títulos del navbar -->
-        <span class="cmm-txt-uppercase cursor-pointer">{{templateData.navBar.texts[0]}}</span>
-        <span class="cmm-txt-uppercase cursor-pointer">{{templateData.navBar.texts[1]}}</span>
+        <span class="cmm-txt-uppercase cursor-pointer" [routerLink]="'products'">{{templateData.navBar.texts[0]}}</span>
+        <span class="cmm-txt-uppercase cursor-pointer" [routerLink]="'products'">{{templateData.navBar.texts[1]}}</span>
 
         <!-- Buscador -->
         <cmm-cmp-i-text class="w-40" [subscriptSizing]="'dynamic'">
@@ -17,7 +18,8 @@
         <!-- Íconos -->
         <span>
             <img class="cursor-pointer" [src]="templateData.navBar.icons[0]" width="50px" height="50px">
-            <img class="cursor-pointer" [src]="templateData.navBar.icons[1]" width="50px" height="50px">
+            <img class="cursor-pointer" [src]="templateData.navBar.icons[1]" width="50px" height="50px"
+                [routerLink]="'products/overview'">
         </span>
 
 

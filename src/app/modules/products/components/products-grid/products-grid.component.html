@@ -3,9 +3,9 @@
     <!-- Filtros -->
 
     <!-- Productos -->
-    <div *ngFor="let post of products" class="col-4 mb-4">
+    <div *ngFor="let post of products" class="col-4 mb-4" [routerLink]="'detail'">
 
-        <div class="w-100" style="aspect-ratio: 9/12;">
+        <div class="w-100 cursor-pointer" style="aspect-ratio: 9/12;">
 
             <img class="h-100 w-100" [src]="post.img" alt="">
 
