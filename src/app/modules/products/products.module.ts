@@ -9,6 +9,7 @@ import { ProductsPaginatorComponent } from './components/products-paginator/prod
 import { CmmModule } from 'src/app/common/common.module';
 import { ProductsOverviewComponent } from './pages/products-overview/products-overview.component';
 import { ProductsKartComponent } from './components/products-kart/products-kart.component';
+import { ProductsDetailComponent } from './pages/products-detail/products-detail.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ProductsKartComponent } from './components/products-kart/products-kart.
     ProductsGridComponent,
     ProductsPaginatorComponent,
     ProductsOverviewComponent,
-    ProductsKartComponent
+    ProductsKartComponent,
+    ProductsDetailComponent
   ],
   imports: [
     CommonModule,
