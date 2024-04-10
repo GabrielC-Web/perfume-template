@@ -44,6 +44,7 @@ export const mainData = {
             strongText: 'en un solo lugar',
             button: 'descubrir',
             carouselItems: [
+              [
                 {
                     image: productImages.product1
                 },
@@ -53,6 +54,9 @@ export const mainData = {
                 {
                     image: productImages.product3
                 },
+
+              ],
+              [
                 {
                     image: productImages.product4
                 },
@@ -62,12 +66,18 @@ export const mainData = {
                 {
                     image: productImages.product6
                 },
+              ],
+              [
                 {
                     image: productImages.product7
                 },
                 {
                     image: productImages.product8
                 },
+                {
+                    image: productImages.product8
+                },
+              ]
             ]
         },
         /**
