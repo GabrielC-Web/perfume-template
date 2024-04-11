@@ -7,7 +7,18 @@ import { Component } from '@angular/core';
 })
 export class MainLayoutComponent {
 
+  /**
+   * Altura del header
+   */
+  headerHeight: number = 0
+
   constructor() { }
+
+  ngAfterViewInit() {
+
+    this.headerHeight = document.getElementById('header')?.offsetHeight as number
+
+  }
 
   getMainData() {
 

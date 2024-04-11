@@ -1,4 +1,4 @@
-<mat-toolbar class="p-0 mt-3" id="toolbar" style="height: 80px;">
+<mat-toolbar class="p-0 w-100" id="toolbar" style="height: 80px;">
 
     <div class="cmm-bg-white w-100 h-100 d-flex justify-content-evenly align-items-center border-bottom">
 
@@ -7,7 +7,7 @@
             [routerLink]="'home'">
 
         <!-- Títulos del navbar -->
-        <div class="d-none d-md-flex">
+        <div class="d-none d-md-flex mx-2" style="gap: 1rem;">
 
             <span class="cmm-txt-uppercase cursor-pointer"
                 [routerLink]="'products'">{{templateData.navBar.texts[0]}}</span>
@@ -17,7 +17,7 @@
         </div>
 
         <!-- Buscador -->
-        <cmm-cmp-i-text class="w-40" [subscriptSizing]="'dynamic'">
+        <cmm-cmp-i-text class="w-40 flex-grow-1" [subscriptSizing]="'dynamic'">
             <mat-icon>search</mat-icon>
         </cmm-cmp-i-text>
 

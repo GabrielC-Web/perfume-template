@@ -1,12 +1,12 @@
 <div class="container-fluid g-0">
 
-    <main class="row mx-auto g-0 h-100" style="max-width: 1000px;margin-bottom: 100px;">
+    <main class="row mx-auto g-0 h-100 position-relative" style="max-width: 1000px;margin-bottom: 100px;">
 
         <!-- Espacio para el navbar -->
-        <cmp-main-header></cmp-main-header>
+        <cmp-main-header id="header" class="w-100" style="position: fixed !important;max-width: 1000px;max-height: fit-content !important;z-index: 1000;"></cmp-main-header>
 
         <!-- Contenido principal -->
-        <div class="">
+        <div class="" [ngStyle]="{'margin-top': headerHeight + 'px'}">
 
             <router-outlet></router-outlet>
 
