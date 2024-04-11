@@ -7,8 +7,14 @@
             [routerLink]="'home'">
 
         <!-- Títulos del navbar -->
-        <span class="cmm-txt-uppercase cursor-pointer" [routerLink]="'products'">{{templateData.navBar.texts[0]}}</span>
-        <span class="cmm-txt-uppercase cursor-pointer" [routerLink]="'products'">{{templateData.navBar.texts[1]}}</span>
+        <div class="d-none d-md-flex">
+
+            <span class="cmm-txt-uppercase cursor-pointer"
+                [routerLink]="'products'">{{templateData.navBar.texts[0]}}</span>
+            <span class="cmm-txt-uppercase cursor-pointer"
+                [routerLink]="'products'">{{templateData.navBar.texts[1]}}</span>
+
+        </div>
 
         <!-- Buscador -->
         <cmm-cmp-i-text class="w-40" [subscriptSizing]="'dynamic'">
@@ -16,12 +22,30 @@
         </cmm-cmp-i-text>
 
         <!-- Íconos -->
-        <span>
+        <span class="d-none d-md-flex">
             <img class="cursor-pointer" [src]="templateData.navBar.icons[0]" width="50px" height="50px">
             <img class="cursor-pointer" [src]="templateData.navBar.icons[1]" width="50px" height="50px"
                 [routerLink]="'products/overview'">
         </span>
 
+        <button mat-icon-button [matMenuTriggerFor]="menu" class="d-flex d-md-none"
+            aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+        </button>
+
+        <mat-menu #menu="matMenu" class="d-flex align-items-center justify-content-center flex-column">
+
+            <span mat-menu-item class="cmm-txt-uppercase cursor-pointer"
+                [routerLink]="'products'">{{templateData.navBar.texts[0]}}</span>
+            <span mat-menu-item class="cmm-txt-uppercase cursor-pointer"
+                [routerLink]="'products'">{{templateData.navBar.texts[1]}}</span>
+
+            <img mat-menu-item class="cursor-pointer" [src]="templateData.navBar.icons[0]" width="50px" height="50px">
+
+            <img mat-menu-item class="cursor-pointer" [src]="templateData.navBar.icons[1]" width="50px" height="50px"
+                [routerLink]="'products/overview'">
+
+        </mat-menu>
 
     </div>
 
