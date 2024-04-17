@@ -1,9 +1,10 @@
-<div class="container-fluid g-0">
+<div class="container-fluid g-0 vh-100 overflow-x-hidden d-flex flex-column justify-content-between">
 
-    <main class="row mx-auto g-0 h-100 position-relative" style="max-width: 1000px;margin-bottom: 100px;">
+    <main class="row mx-auto g-0 w-100 position-relative" style="max-width: 1000px;margin-bottom: 100px;">
 
         <!-- Espacio para el navbar -->
-        <cmp-main-header id="header" class="w-100" style="position: fixed !important;max-width: 1000px;max-height: fit-content !important;z-index: 1000;"></cmp-main-header>
+        <cmp-main-header id="header" class="w-100"
+            style="position: fixed !important;max-width: 1000px;z-index: 1000;"></cmp-main-header>
 
         <!-- Contenido principal -->
         <div class="" [ngStyle]="{'margin-top': headerHeight + 'px'}">
@@ -15,6 +16,6 @@
     </main>
 
     <!-- Footer -->
-    <cmp-main-footer class="overflow-hidden"></cmp-main-footer>
+    <cmp-main-footer></cmp-main-footer>
 
 </div>
