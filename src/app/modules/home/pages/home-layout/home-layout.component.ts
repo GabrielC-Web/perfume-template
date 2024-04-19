@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { mainData } from 'src/app/modules/main/models/main.data';
 import { productAds, carouselImages, homeImages, logos } from 'src/assets/images/image-routes';
 
@@ -46,6 +46,33 @@ export class HomeLayoutComponent {
    */
   productSelected: any
 
+  @HostListener('window:resize', ['$event'])
+  onResize(e: Event) {
+
+    //* Veo si la pantalla es lo suficientemente pequeña
+    if (window.innerWidth <= 992) {
+      this.changeListMode()
+    } else {
+      this.productItems = []
+    }
+
+  }
+
+  constructor() {
+
+  }
+
+  ngOnInit() {
+
+    //* Veo si la pantalla es lo suficientemente pequeña
+    if (window.innerWidth <= 992) {
+      this.changeListMode()
+    } else {
+      this.productItems = []
+    }
+
+  }
+
   /**
    * Funcion para seleccionar el siguiente elemento del carrucel
    */
@@ -88,6 +115,32 @@ export class HomeLayoutComponent {
 
     // Guardo el id de la imagen seleccionada
     this.productSelected = idImg;
+
+  }
+
+  /**
+   * Genera una lista con todos los items del listado con secciones de items
+   */
+  changeListMode() {
+
+    //* Vacío el listado
+    this.productItems = [
+      {
+        image: carouselImages.perfume1
+      },
+      {
+        image: carouselImages.perfume2
+      },
+      {
+        image: carouselImages.perfume3
+      },
+      {
+        image: carouselImages.perfume4
+      },
+      {
+        image: carouselImages.perfume5
+      },
+    ]
 
   }
 

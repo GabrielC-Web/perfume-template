@@ -41,8 +41,8 @@
 
     <cmp-cmm-carousel class="pb-5" carouselId="carousel" [customButtons]="true">
 
-        <!-- contendor de imagenes -->
-        <div class="h-100" carousel>
+        <!-- Elementos del carrusel en tamaño grande -->
+        <ng-container *ngIf="!productItems.length" carousel>
 
             <!-- Plantilla -->
             <div *ngFor="let product of templateData.homeModule.carouselSection.carouselItems, index as i"
@@ -57,7 +57,25 @@
 
             </div>
 
-        </div>
+        </ng-container>
+
+        <!-- Elementos del carrusel en tamaño pequeño -->
+        <ng-container *ngIf="productItems.length" carousel>
+
+            <!-- Plantilla -->
+            <div *ngFor="let product of productItems, index as i" class="carousel-item h-100"
+                [ngClass]="{'active': i == 0}">
+
+                <div class="col-12 col-md-10 col-lg-8 h-100 p-0 mx-auto d-flex align-items-center">
+
+                    <img [src]="product.image" class="d-block mx-auto rounded cursor-pointer"
+                        style="max-height: 85%; max-width: 25%;" alt="imagen de la plantilla">
+
+                </div>
+
+            </div>
+
+        </ng-container>
 
         <!-- botones -->
         <button class="border-0 bg-transparent" type="button" prev (click)="prevElement()">
@@ -91,11 +109,11 @@
 <!-- Artículo -->
 <section class="row g-0  cmm-bg-white pb-5">
 
-    <div class="col-6">
+    <div class="col-md-6">
         <img [src]="templateData.homeModule.lowerSection.productAd" alt="" class="w-100 h-100" style="aspect-ratio: 1;">
     </div>
 
-    <div class="col-6 px-5">
+    <div class="col-md-6 px-5 mt-5 mt-md-0">
 
         <h4 class="cmm-txt-thin-bold fs-24 cmm-txt-uppercase">{{templateData.homeModule.lowerSection.article.title}}
         </h4>
