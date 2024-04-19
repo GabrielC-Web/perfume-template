@@ -6,11 +6,11 @@
 
         <div class="d-flex flex-column justify-content-center align-items-center" style="translate: 0 50%;">
 
-            <p class="m-0 text-white" style="font-size: 80px !important;">{{templateData.homeModule.mainLeftAd.text}}
+            <p class="m-0 text-white homeForXFont">{{templateData.homeModule.mainLeftAd.text}}
             </p>
 
             <!-- Botón -->
-            <cmp-core-button mode="light">
+            <cmp-core-button mode="light" routerLink="/products">
                 {{templateData.homeModule.mainLeftAd.button}}
             </cmp-core-button>
 
@@ -21,10 +21,10 @@
     <div [style.background-image]="'url(' + templateData.homeModule.mainRightAd.image +')'"
         class="col-6 home-bg-image d-flex flex-column align-items-center justify-content-center overflow-hidden">
 
-        <p class="m-0 text-white" style="font-size: 80px !important;">{{templateData.homeModule.mainRightAd.text}}</p>
+        <p class="m-0 text-white homeForXFont">{{templateData.homeModule.mainRightAd.text}}</p>
 
         <!-- Botón -->
-        <cmp-core-button mode="light">
+        <cmp-core-button mode="light" routerLink="/products">
             {{templateData.homeModule.mainRightAd.button}}
         </cmp-core-button>
 

@@ -4,3 +4,15 @@
     background-position: top;
     aspect-ratio: 9/14;
 }
+
+.homeForXFont {
+    font-size: 80px !important;
+}
+
+@media (max-width: 768px) {
+
+    .homeForXFont {
+        font-size: 40px !important;
+    }
+
+}
