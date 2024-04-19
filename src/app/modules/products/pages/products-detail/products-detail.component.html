@@ -1,18 +1,17 @@
 <!-- Carrito de productos -->
 <section class="col-12 my-5">
 
-    <div class="row w-100 justify-content-between">
+    <div class="row mx-auto w-100 justify-content-between">
 
         <!-- Imágenes -->
-        <div class="col-12 col-md-6 h-100 pe-4">
+        <div class="col-12 col-md-6 h-100 pe-md-4">
 
-            <img *ngFor="let image of images" [src]="image" style="width: 50%;aspect-ratio: 9/16;max-height: 300px;"
-                alt="">
+            <img *ngFor="let image of images" [src]="image" class="square_Image cusor-pointer">
 
         </div>
 
         <!-- Detalles -->
-        <div class="col-12 col-md-6 mt-5 mt-md-0 d-flex flex-column align-items-center justify-content-center ps-5">
+        <div class="col-12 col-md-6 mt-5 mt-md-0 d-flex flex-column align-items-center justify-content-center ps-md-5">
 
             <div class="d-flex flex-column align-items-center">
 

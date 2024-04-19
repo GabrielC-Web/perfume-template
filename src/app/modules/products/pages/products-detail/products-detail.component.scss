@@ -1,0 +1,10 @@
+.square_Image {
+    width: 50%;
+    aspect-ratio: 9/16;
+    max-height: 300px;
+}
+
+.square_Image:hover {
+    scale: 1.05;
+    box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 12%) !important;
+}
