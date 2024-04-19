@@ -20,6 +20,8 @@ export class HomeLayoutComponent {
    */
   homeImages = homeImages
 
+  logos = logos
+
   /**
    * Productos
    */

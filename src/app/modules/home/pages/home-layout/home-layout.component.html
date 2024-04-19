@@ -1,5 +1,5 @@
 <!-- For her/him -->
-<section class="row g-0">
+<section class="row g-0 position-relative">
 
     <div [style.background-image]="'url(' + templateData.homeModule.mainLeftAd.image +')'"
         class="col-6 home-bg-image d-flex flex-column align-items-center justify-content-center overflow-hidden">
@@ -21,13 +21,22 @@
     <div [style.background-image]="'url(' + templateData.homeModule.mainRightAd.image +')'"
         class="col-6 home-bg-image d-flex flex-column align-items-center justify-content-center overflow-hidden">
 
-        <p class="m-0 text-white homeForXFont">{{templateData.homeModule.mainRightAd.text}}</p>
+        <div class="d-flex flex-column justify-content-center align-items-center for_him">
 
-        <!-- Botón -->
-        <cmp-core-button mode="light" routerLink="/products">
-            {{templateData.homeModule.mainRightAd.button}}
-        </cmp-core-button>
+            <p class="m-0 text-white homeForXFont">{{templateData.homeModule.mainRightAd.text}}</p>
 
+            <!-- Botón -->
+            <cmp-core-button mode="light" routerLink="/products">
+                {{templateData.homeModule.mainRightAd.button}}
+            </cmp-core-button>
+
+        </div>
+
+    </div>
+
+    <!-- Logo atravesado -->
+    <div class="position-absolute logo_circle d-flex align-items-center justify-content-center cursor-pointer">
+        <img class="" [src]="logos.antonioBanderas" alt="">
     </div>
 
 </section>
