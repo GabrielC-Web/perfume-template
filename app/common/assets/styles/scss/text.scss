@@ -3,7 +3,6 @@
 --------------------------------------------------------------------------------------------------------------------------------------*/
 
 @import "./variables.scss";
-
 // @import '~bootstrap/dist/css/bootstrap.min.css';
 *:not(.material-icons) {
   font-family: "poppins" !important;
@@ -21,19 +20,15 @@ body {
   .mat-paginator-range-label {
     margin: 0px !important;
   }
-
   .mat-paginator-container {
     padding: 0px !important;
   }
-
   .pbutton-0 {
     padding: 0px !important;
   }
-
   .align-text-left {
     width: 100% !important;
   }
-
   .align-text-right {
     width: 100% !important;
   }
@@ -44,7 +39,6 @@ body {
     float: right !important;
     width: max-content;
   }
-
   .align-text-right {
     float: initial;
     width: max-content;
@@ -70,7 +64,8 @@ body {
   font-style: normal;
   font-display: block;
   font-weight: 400;
-  src: url(../../fonts/material/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format("woff2");
+  src: url(../../fonts/material/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2)
+    format("woff2");
 }
 
 @font-face {
@@ -103,10 +98,6 @@ body {
 
 .cmm-txt-normal {
   font-weight: 600 !important;
-}
-
-.cmm-txt-thin-bold {
-  font-weight: 700 !important;
 }
 
 .cmm-txt-bold {
@@ -205,7 +196,6 @@ body {
   .cmm-txt-sm-h5 {
     font-size: 0.9rem;
   }
-
   .cmm-txt-sm-p {
     font-size: 0.85rem;
   }
@@ -255,7 +245,7 @@ body {
 }
 
 // gradient
-.cmm-txt-gradient {
+.cmm-txt-gradient{
   /* Fallback: Set a background color. */
   background-color: $v-primary;
 
@@ -295,7 +285,7 @@ body {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 
-  mat-icon {
+  mat-icon{
     /* Fallback: Set a background color. */
     background-color: $v-primary;
 
@@ -321,11 +311,11 @@ body {
     background-image: $v-gradient;
     transition: all linear 250ms;
 
-    mat-icon {
+    mat-icon{
 
-      /* Create the gradient. */
-      background-image: $v-gradient;
-      transition: all linear 250ms;
+          /* Create the gradient. */
+          background-image: $v-gradient;
+          transition: all linear 250ms;
 
     }
 
@@ -360,7 +350,6 @@ body {
 
 .title-txt {
   color: $v-title-txt !important;
-
   p {
     color: $v-back-txt !important;
   }
@@ -368,22 +357,6 @@ body {
 
 .cmm-txt-white {
   color: $v-white !important;
-}
-
-/*--------------------------------------------------------------------------------------------------------------------------------------
-Mayúsculas, minúsculas y más
---------------------------------------------------------------------------------------------------------------------------------------*/
-
-.cmm-txt-uppercase {
-  text-transform: uppercase !important;
-}
-
-.cmm-txt-lowercase {
-  text-transform: lowercase !important;
-}
-
-.cmm-txt-capitalize {
-  text-transform: capitalize !important;
 }
 
 /*--------------------------------------------------------------------------------------------------------------------------------------
