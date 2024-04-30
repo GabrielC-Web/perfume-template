@@ -6,7 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
-import { AppRoutingModule } from './app.routing.module';
+import { AppRoutingModule, routes } from './app.routing.module';
 import { CmmModule } from './common/common.module';
 import { CmmAuthGuard } from './common/guards/auth.guard';
 import { CmmHttpInterceptor } from './common/interceptors/http.interceptor';
@@ -27,7 +27,7 @@ import { AppComponent } from './app.component';
         RouterModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        RouterModule.forRoot([]),
+        RouterModule.forRoot(routes, { scrollPositionRestoration: "enabled" }),
     ],
     providers: [
         CmmDataService,
