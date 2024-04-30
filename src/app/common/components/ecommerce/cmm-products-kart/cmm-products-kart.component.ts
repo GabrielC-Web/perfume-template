@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'cmp-cmm-products-kart',
@@ -17,8 +18,14 @@ export class CmmProductsKartComponent {
    */
   @Input() preBill: any = []
 
-  ngOnInit() {
-    console.log(this.products);
+  @Input() config: {
+    customButtonsBorderRadius?: string
+  } = {}
+
+  constructor(
+    private router: Router
+  ) {
+
   }
 
   /**
@@ -50,6 +57,15 @@ export class CmmProductsKartComponent {
 
     // xd
     this.products.splice(this.products.indexOf(product), 1)
+
+  }
+
+  /**
+   * Me lleva de nuevo a la vista de productos
+   */
+  navigateBack() {
+
+    this.router.navigate(['/products'])
 
   }
 

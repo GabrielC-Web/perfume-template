@@ -41,6 +41,14 @@ import { CmmProductsKartComponent } from './components/ecommerce/cmm-products-ka
 import { CmmNewButtonComponent } from './components/ecommerce/cmm-new-button/cmm-new-button.component';
 import { CmmCarouselComponent } from './components/ecommerce/cmm-carousel/cmm-carousel.component';
 import { CmmPaginatorComponent } from './components/ecommerce/cmm-paginator/cmm-paginator.component';
+import { CmmProductCardComponent } from './components/ecommerce/cmm-product-card/cmm-product-card.component';
+import { CmmBusinessQualitiesComponent } from './components/ecommerce/cmm-business-qualities/cmm-business-qualities.component';
+import { CmmProductDetailComponent } from './components/ecommerce/cmm-product-detail/cmm-product-detail.component';
+import { CmmProductDetailV1Component } from './components/ecommerce/cmm-product-detail-v1/cmm-product-detail-v1.component';
+import { CmmProductDetailGridComponent } from './components/ecommerce/cmm-product-detail-grid/cmm-product-detail-grid.component';
+import { CmmProdutDetailQuantityComponent } from './components/ecommerce/cmm-produt-detail-quantity/cmm-produt-detail-quantity.component';
+import { CmmNewCarouselComponent } from './components/ecommerce/cmm-new-carousel/cmm-new-carousel.component';
+import { CmmNewFooterComponent } from './components/ecommerce/cmm-new-footer/cmm-new-footer.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +86,15 @@ import { CmmPaginatorComponent } from './components/ecommerce/cmm-paginator/cmm-
     CmmProductsKartComponent,
     CmmNewButtonComponent,
     CmmCarouselComponent,
-    CmmPaginatorComponent
+    CmmPaginatorComponent,
+    CmmProductCardComponent,
+    CmmBusinessQualitiesComponent,
+    CmmProductDetailComponent,
+    CmmProductDetailV1Component,
+    CmmProductDetailGridComponent,
+    CmmProdutDetailQuantityComponent,
+    CmmNewCarouselComponent,
+    CmmNewFooterComponent,
   ],
   imports: [
     MaterialModule,
@@ -124,7 +140,15 @@ import { CmmPaginatorComponent } from './components/ecommerce/cmm-paginator/cmm-
     CmmNewButtonComponent,
     FormsModule,
     CmmCarouselComponent,
-    CmmPaginatorComponent
+    CmmPaginatorComponent,
+    CmmProductCardComponent,
+    CmmBusinessQualitiesComponent,
+    CmmProductDetailComponent,
+    CmmProductDetailV1Component,
+    CmmProductDetailGridComponent,
+    CmmProdutDetailQuantityComponent,
+    CmmNewCarouselComponent,
+    CmmNewFooterComponent
   ],
 })
 
