@@ -20,15 +20,16 @@
         </div>
 
         <!-- Buscador -->
-        <cmm-cmp-i-text class="w-40 flex-grow-1" [subscriptSizing]="'dynamic'">
+        <cmm-cmp-i-text class="w-40 flex-grow-1" [subscriptSizing]="'dynamic'" style="max-width: 300px;">
             <mat-icon>search</mat-icon>
         </cmm-cmp-i-text>
 
         <!-- Íconos -->
-        <span class="d-none d-md-flex">
-            <img class="cursor-pointer" [src]="templateData.navBar.icons[0]" width="50px" height="50px">
-            <img class="cursor-pointer" [src]="templateData.navBar.icons[1]" width="50px" height="50px"
-                [routerLink]="'products/overview'">
+        <span class="d-none d-md-flex gap-3">
+
+            <mat-icon class="header_icon fs-30 cursor-pointer">person</mat-icon>
+            <mat-icon class="header_icon fs-30 cursor-pointer" routerLink="products/overview">shopping_cart</mat-icon>
+
         </span>
 
         <!-- menú responsive -->
@@ -45,10 +46,14 @@
             <span mat-menu-item class="cmm-txt-uppercase cursor-pointer"
                 [routerLink]="'products'">{{templateData.navBar.texts[1]}}</span>
 
-            <img mat-menu-item class="cursor-pointer" [src]="templateData.navBar.icons[0]" width="50px" height="50px">
+            <div mat-menu-item class="d-flex justify-content-center">
+                <mat-icon class="header_icon fs-30 cursor-pointer">person</mat-icon>
+            </div>
 
-            <img mat-menu-item class="cursor-pointer" [src]="templateData.navBar.icons[1]" width="50px" height="50px"
-                [routerLink]="'products/overview'">
+            <div mat-menu-item class="d-flex justify-content-center">
+                <mat-icon class="header_icon fs-30 cursor-pointer"
+                    routerLink="products/overview">shopping_cart</mat-icon>
+            </div>
 
         </mat-menu>
 
