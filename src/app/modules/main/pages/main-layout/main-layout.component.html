@@ -1,15 +1,34 @@
-<div class="container-fluid g-0 vh-100 overflow-x-hidden d-flex flex-column justify-content-between">
+<div class="container-fluid g-0 overflow-x-hidden d-flex flex-column justify-content-between"
+    style="overflow-y: scroll;min-height: 100vh;">
 
-    <main class="row mx-auto g-0 w-100 position-relative" style="max-width: 1000px;margin-bottom: 100px;">
+    <main class="row w-100 g-0 justify-content-center align-items-start">
+
+        <!-- Anuncio -->
+        <div class="cmm-bg-project-tertiary position-fixed d-none" style="width: 100%;height: 60px;"></div>
 
         <!-- Espacio para el navbar -->
         <cmp-main-header id="header" class="w-100"
-            style="position: fixed !important;max-width: 1000px;z-index: 1000;"></cmp-main-header>
+            style="position: fixed !important;max-width: 1500px;z-index: 1000;"></cmp-main-header>
 
         <!-- Contenido principal -->
-        <div class="" [ngStyle]="{'margin-top': headerHeight + 'px'}">
+        <div class="mx-auto w-100 main_container" [ngStyle]="{'margin-top': 80  + 'px'}">
 
-            <router-outlet></router-outlet>
+            <mat-sidenav-container class="w-100 position-relative">
+
+                <!-- sidenav -->
+                <mat-sidenav class="w-100" mode="over" [fixedInViewport]="true">
+
+                    <!-- componente de sidenav -->
+                    <!-- <cmp-main-sidenav-menu class="w-100" (closeSidenav)="sidenavOpen = false"></cmp-main-sidenav-menu> -->
+
+                </mat-sidenav>
+
+                <!-- Contenido principal -->
+                <mat-sidenav-content>
+                    <router-outlet></router-outlet>
+                </mat-sidenav-content>
+
+            </mat-sidenav-container>
 
         </div>
 
