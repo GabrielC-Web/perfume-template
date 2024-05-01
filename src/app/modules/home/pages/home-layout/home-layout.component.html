@@ -48,37 +48,17 @@
             class="cmm-txt-thin-bold">{{templateData.homeModule.carouselSection.strongText}}</strong>
     </h3>
 
-    <cmp-cmm-carousel class="pb-5" carouselId="carousel" [customButtons]="true">
+    <cmp-cmm-new-carousel class="pb-5 my-5" carouselId="carousel">
 
-        <!-- Elementos del carrusel en tamaño grande -->
-        <ng-container *ngIf="!productItems.length" carousel>
-
-            <!-- Plantilla -->
-            <div *ngFor="let product of templateData.homeModule.carouselSection.carouselItems, index as i"
-                class="carousel-item h-100" [ngClass]="{'active': i == 0}">
-
-                <div class="col-12 col-md-10 col-lg-8 h-100 p-0 mx-auto d-flex align-items-center">
-
-                    <img *ngFor="let item of product" [src]="item.image" class="d-block mx-auto rounded cursor-pointer"
-                        style="max-height: 85%; max-width: 25%;" alt="imagen de la plantilla">
-
-                </div>
-
-            </div>
-
-        </ng-container>
-
-        <!-- Elementos del carrusel en tamaño pequeño -->
         <ng-container *ngIf="productItems.length" carousel>
 
             <!-- Plantilla -->
-            <div *ngFor="let product of productItems, index as i" class="carousel-item h-100"
-                [ngClass]="{'active': i == 0}">
+            <div *ngFor="let product of productItems, index as i" class="carousel_item h-100">
 
                 <div class="col-12 col-md-10 col-lg-8 h-100 p-0 mx-auto d-flex align-items-center">
 
-                    <img [src]="product.image" class="d-block mx-auto rounded cursor-pointer"
-                        style="max-height: 85%; max-width: 25%;" alt="imagen de la plantilla">
+                    <img [src]="product.image" class="d-block w-100 mx-auto rounded cursor-pointer"
+                        alt="imagen de la plantilla">
 
                 </div>
 
@@ -86,16 +66,7 @@
 
         </ng-container>
 
-        <!-- botones -->
-        <button class="border-0 bg-transparent" type="button" prev (click)="prevElement()">
-            <mat-icon class="text-black">arrow_back_ios</mat-icon>
-        </button>
-
-        <button class="border-0 bg-transparent" type="button" next (click)="nextElement()">
-            <mat-icon class="text-black">arrow_forward_ios</mat-icon>
-        </button>
-
-    </cmp-cmm-carousel>
+    </cmp-cmm-new-carousel>
 
     <cmp-core-button class="d-flex justify-content-center">
         {{templateData.homeModule.carouselSection.button}}
