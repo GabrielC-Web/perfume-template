@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import * as AOS from 'aos';
 export const CC_PROJECT_INITIALS = 'f-template';
 @Component({
   selector: 'app-root',
@@ -9,9 +8,6 @@ export const CC_PROJECT_INITIALS = 'f-template';
 export class AppComponent {
 
   ngOnInit(): void {
-    AOS.init();
-    window.addEventListener('load', AOS.refresh)
-
     document.documentElement.style.setProperty('--v-dynamic-primary', '#000');
     document.documentElement.style.setProperty('--v-dynamic-secondary', '#000');
   }

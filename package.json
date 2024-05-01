@@ -1,6 +1,6 @@
 {
   "name": "perfume-template",
-  "version": "0.0.29",
+  "version": "0.0.30",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -22,7 +22,6 @@
     "@angular/platform-browser-dynamic": "^16.2.12",
     "@angular/router": "^16.2.12",
     "@ngrx/store": "^16.3.0",
-    "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.4",
     "moment": "^2.29.4",

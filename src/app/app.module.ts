@@ -1,19 +1,18 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
-import { StoreModule } from '@ngrx/store';
-import { AppRoutingModule, routes } from './app.routing.module';
+import { AppComponent } from './app.component';
 import { CmmModule } from './common/common.module';
+import { CmmDataService } from './common/services/data.service';
+import { CmmTimerSessionService } from './common/services/timer-session.service';
+import { CmmDialogService } from './common/services/dialogs.service';
 import { CmmAuthGuard } from './common/guards/auth.guard';
 import { CmmHttpInterceptor } from './common/interceptors/http.interceptor';
-import { CmmDataService } from './common/services/data.service';
-import { CmmDialogService } from './common/services/dialogs.service';
-import { CmmTimerSessionService } from './common/services/timer-session.service';
-import { AppComponent } from './app.component';
+import { AppRoutingModule, routes } from './app-routing.module';
 
 @NgModule({
     declarations: [AppComponent],
