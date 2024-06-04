@@ -68,7 +68,7 @@
 
     </cmp-cmm-new-carousel>
 
-    <cmp-core-button class="d-flex justify-content-center">
+    <cmp-core-button class="d-flex justify-content-center w-100 button_width">
         {{templateData.homeModule.carouselSection.button}}
     </cmp-core-button>
 
@@ -78,7 +78,9 @@
 <section class="row g-0">
 
     <div *ngFor="let productAd of templateData.homeModule.squareAdsSection.images" class="col-6">
-        <img [src]="productAd" alt="" class="w-100" style="aspect-ratio: 1;">
+        <!-- <img [src]="productAd" alt="" class="w-100" style="aspect-ratio: 1;"> -->
+        <div class="square_image" [style.background-image]="'url(' + productAd +')'"></div>
+
     </div>
 
 </section>

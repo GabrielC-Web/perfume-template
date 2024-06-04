@@ -31,6 +31,24 @@
     scale: 1.05;
 }
 
+.button_width {
+    max-width: 980px;
+}
+
+.square_image {
+    background-size: 100%;
+    // height: 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    aspect-ratio: 12/11;
+    transition: all ease 0.5s;
+}
+
+.square_image:hover {
+    background-size: 120%;
+    transition: all ease 0.5s;
+}
+
 @media (max-width: 768px) {
 
     .logo_circle {
@@ -40,6 +58,14 @@
 
     .for_him {
         translate: 0 50%;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .button_width {
+        max-width: 380px;
     }
 
 }
